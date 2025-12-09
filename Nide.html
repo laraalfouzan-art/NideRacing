@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nide Racing - Welcome</title>
+<style>
+/* Full-screen animated gradient background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #110011, #510169, #ffd91f, #110011);
+    background-size: 800% 800%;
+    animation: gradientAnimation 20s ease infinite;
+    color: white;
+}
+
+@keyframes gradientAnimation {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+}
+
+/* Neon glowing bigger box */
+.box {
+    background: rgba(81, 1, 105, 0.9);
+    padding: 60px;
+    border-radius: 25px;
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+    border: 3px solid #ffd91f;
+    box-shadow: 0 0 30px #510169, 0 0 50px #ffd91f, 0 0 80px #510169;
+    animation: floatBox 3s ease-in-out infinite alternate;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Floating animation */
+@keyframes floatBox {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-15px); }
+}
+
+/* Neon text */
+h1 {
+    color: #ffd91f;
+    text-shadow: 0 0 10px #ffd91f, 0 0 20px #ffd91f, 0 0 30px #510169;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0 0 5px #510169;
+}
+
+/* Glowing button */
+a button {
+    background: #ffd91f;
+    color: #510169;
+    font-weight: bold;
+    border: none;
+    padding: 16px 28px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #ffd91f, 0 0 30px #ffd91f, 0 0 50px #510169;
+}
+
+a button:hover {
+    background: #ffe45c;
+    box-shadow: 0 0 30px #ffd91f, 0 0 60px #ffd91f, 0 0 90px #510169;
+    transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Welcome to Nide Racing</h1>
+    <p>Welcome to our STEM Racing team! Get ready to experience creativity, speed, and innovation.</p>
+    <a href="game.html"><button>Ready to Play?</button></a>
+</div>
+
+</body>
+</html>
